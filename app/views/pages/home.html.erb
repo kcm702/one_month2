@@ -1,0 +1,17 @@
+<div class="jumbotron">
+	<h1>App Home Page</h1>
+	<p>Welcome to <span class="one">One Month Rails</span> Re-deux.</p>
+	<p>Find me in app/views/pages/home.html.erb</p>
+	
+	<% if user_signed_in? %>
+		<p>Welcome back.</p>
+	<% else %>
+		<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary" %>
+		<%= link_to "Log In", new_user_session_path, class: "btn btn-primary" %>
+	<% end %>
+
+
+</div>
+
+<p>Welcome to One Month Rails Re-deux.</p>
+<p>Find me in app/views/pages/home.html.erb</p>
